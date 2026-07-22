@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agricultores - AgroLink</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<div class="logo">
+🌱 <span>AgroLink</span>
+</div>
+
+<nav>
+
+<a href="index.html">
+<i class="fas fa-house"></i>
+Inicio
+</a>
+
+<a href="productos.html">
+<i class="fas fa-box"></i>
+Productos
+</a>
+
+<a class="active">
+<i class="fas fa-users"></i>
+Agricultores
+</a>
+
+<a href="mapa.html">
+<i class="fas fa-map-location-dot"></i>
+Mapa
+</a>
+
+<a href="pedidos.html">
+<i class="fas fa-cart-shopping"></i>
+Pedidos
+</a>
+
+<a href="precios.html">
+<i class="fas fa-chart-line"></i>
+Precios
+</a>
+
+<a href="mensajes.html">
+<i class="fas fa-comments"></i>
+Mensajes
+</a>
+
+<a href="perfil.html">
+<i class="fas fa-user"></i>
+Perfil
+</a>
+
+</nav>
+
+</aside>
+
+<main class="main-content">
+
+<div class="glass">
+
+<h1>👨‍🌾 Agricultores Registrados</h1>
+
+<p>
+Conoce a los productores que forman parte de AgroLink Piura.
+</p>
+
+</div>
+
+<br>
+
+<div class="product-grid">
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Juan Pérez','Sullana, Piura','🥭 Mango Kent - S/2.20 kg<br>🍌 Banano Orgánico - S/1.90 kg')">
+
+<img src="img/agricultor.jpg">
+
+<h3>Juan Pérez</h3>
+
+<p>📍 Sullana - Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🥭 Mango Kent</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('María Torres','Paita, Piura','🍋 Limón Tahití - S/1.80 kg<br>🍊 Mandarina - S/2.40 kg')">
+
+<img src="img/agricultora2.jpg">
+
+<h3>María Torres</h3>
+
+<p>📍 Paita - Piura</p>
+
+<p>⭐ 4.8/5</p>
+
+<p>🍋 Limón Tahití</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Carlos Mendoza','Sechura, Piura','🌾 Arroz Extra - S/1.50 kg<br>🌽 Maíz Amarillo - S/1.30 kg')">
+
+<img src="img/agricultor3.jpg">
+
+<h3>Carlos Mendoza</h3>
+
+<p>📍 Sechura - Piura</p>
+
+<p>⭐ 4.7/5</p>
+
+<p>🌾 Arroz Extra</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Ana Castillo','Piura','🍇 Uva Red Globe - S/3.50 kg<br>🥑 Palta Hass - S/4.00 kg')">
+
+<img src="img/agricultor4.jpg">
+
+<h3>Ana Castillo</h3>
+
+<p>📍 Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🍇 Uva Red Globe</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Pedro Rojas','Morropón, Piura','🍅 Tomate - S/1.20 kg<br>🌽 Maíz Amarillo - S/1.30 kg')">
+
+<img src="img/agricultor5.jpg">
+
+<h3>Pedro Rojas</h3>
+
+<p>📍 Morropón - Piura</p>
+
+<p>⭐ 4.8/5</p>
+
+<p>🍅 Tomate</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Lucía Vega','Piura','🥑 Palta Hass - S/4.00 kg<br>🍉 Sandía - S/1.50 kg')">
+
+<img src="img/agricultor6.jpg">
+
+<h3>Lucía Vega</h3>
+
+<p>📍 Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🥑 Palta Hass</p>
+
+</div>
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('José Ramírez','Catacaos, Piura','🍊 Naranja - S/2.10 kg<br>🍈 Melón - S/1.80 kg')">
+
+<img src="img/agricultor7.jpg">
+
+<h3>José Ramírez</h3>
+
+<p>📍 Catacaos - Piura</p>
+
+<p>⭐ 4.8/5</p>
+
+<p>🍊 Naranja</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Rosa García','Tambogrande, Piura','🥭 Maracuyá - S/2.80 kg<br>🥒 Pepino - S/1.30 kg')">
+
+<img src="img/agricultor8.jpg">
+
+<h3>Rosa García</h3>
+
+<p>📍 Tambogrande - Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🥭 Maracuyá</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Miguel Herrera','Chulucanas, Piura','🌶 Ají Escabeche - S/3.20 kg<br>🫘 Frijol Canario - S/4.50 kg')">
+
+<img src="img/agricultor9.jpg">
+
+<h3>Miguel Herrera</h3>
+
+<p>📍 Chulucanas - Piura</p>
+
+<p>⭐ 4.7/5</p>
+
+<p>🌶 Ají Escabeche</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Elena Flores','Piura','🍌 Banano Orgánico - S/1.90 kg<br>🍇 Uva Red Globe - S/3.50 kg')">
+
+<img src="img/agricultor10.jpg">
+
+<h3>Elena Flores</h3>
+
+<p>📍 Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🍌 Banano Orgánico</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Luis Torres','Sullana, Piura','🍠 Camote - S/1.40 kg<br>🥔 Papa Amarilla - S/1.70 kg')">
+
+<img src="img/agricultor11.jpg">
+
+<h3>Luis Torres</h3>
+
+<p>📍 Sullana - Piura</p>
+
+<p>⭐ 4.8/5</p>
+
+<p>🍠 Camote</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Andrea Cruz','Paita, Piura','🌽 Maíz Amarillo - S/1.30 kg<br>🌾 Arroz Extra - S/1.50 kg')">
+
+<img src="img/agricultor12.jpg">
+
+<h3>Andrea Cruz</h3>
+
+<p>📍 Paita - Piura</p>
+
+<p>⭐ 4.8/5</p>
+
+<p>🌽 Maíz Amarillo</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Marco Sánchez','Piura','🍋 Limón Tahití - S/1.80 kg<br>🍅 Tomate - S/1.20 kg')">
+
+<img src="img/agricultor13.jpg">
+
+<h3>Marco Sánchez</h3>
+
+<p>📍 Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🍋 Limón Tahití</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Diana Silva','Sechura, Piura','🍊 Mandarina - S/2.40 kg<br>🍉 Sandía - S/1.50 kg')">
+
+<img src="img/agricultor14.jpg">
+
+<h3>Diana Silva</h3>
+
+<p>📍 Sechura - Piura</p>
+
+<p>⭐ 4.7/5</p>
+
+<p>🍊 Mandarina</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Fernando Ruiz','Morropón, Piura','🥔 Yuca - S/1.60 kg<br>🍠 Camote - S/1.40 kg')">
+
+<img src="img/agricultor15.jpg">
+
+<h3>Fernando Ruiz</h3>
+
+<p>📍 Morropón - Piura</p>
+
+<p>⭐ 4.8/5</p>
+
+<p>🥔 Yuca</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Patricia López','Piura','🥑 Palta Hass - S/4.00 kg<br>🥭 Mango Kent - S/2.20 kg')">
+
+<img src="img/agricultor16.jpg">
+
+<h3>Patricia López</h3>
+
+<p>📍 Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🥑 Palta Hass</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Hugo Morales','Catacaos, Piura','🍈 Melón - S/1.80 kg<br>🥭 Maracuyá - S/2.80 kg')">
+
+<img src="img/agricultor17.jpg">
+
+<h3>Hugo Morales</h3>
+
+<p>📍 Catacaos - Piura</p>
+
+<p>⭐ 4.8/5</p>
+
+<p>🍈 Melón</p>
+
+</div>
+
+<div class="product-card agricultor"
+onclick="mostrarAgricultor('Carmen Núñez','Tambogrande, Piura','🫘 Frijol Canario - S/4.50 kg<br>🌶 Ají Escabeche - S/3.20 kg')">
+
+<img src="img/agricultor18.jpg">
+
+<h3>Carmen Núñez</h3>
+
+<p>📍 Tambogrande - Piura</p>
+
+<p>⭐ 4.9/5</p>
+
+<p>🫘 Frijol Canario</p>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="glass" id="perfilAgricultor">
+
+<h2>👨‍🌾 Selecciona un agricultor</h2>
+
+<p>
+Aquí aparecerán los productos, precios y el botón para enviar mensajes.
+</p>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

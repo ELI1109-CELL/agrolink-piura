@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Precios - AgroLink</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<div class="logo">
+🌱 <span>AgroLink</span>
+</div>
+
+<nav>
+
+<a href="index.html"><i class="fas fa-house"></i> Inicio</a>
+<a href="productos.html"><i class="fas fa-box"></i> Productos</a>
+<a href="agricultores.html"><i class="fas fa-users"></i> Agricultores</a>
+<a href="mapa.html"><i class="fas fa-map-location-dot"></i> Mapa</a>
+<a href="pedidos.html"><i class="fas fa-cart-shopping"></i> Pedidos</a>
+
+<a class="active">
+<i class="fas fa-chart-line"></i>
+Precios
+</a>
+
+<a href="mensajes.html"><i class="fas fa-comments"></i> Mensajes</a>
+<a href="perfil.html"><i class="fas fa-user"></i> Perfil</a>
+
+</nav>
+
+</aside>
+
+<main class="main-content">
+
+<div class="glass">
+
+<h2>🚦 Semáforo Inteligente</h2>
+
+<input
+type="text"
+id="productoSemaforo"
+placeholder="Ejemplo: Limón">
+
+<br><br>
+
+<button onclick="generarSemaforo()">
+Generar Semáforo
+</button>
+
+<br><br>
+
+<div id="resultadoSemaforo">
+
+<div class="price green">
+🟢 Esperando producto...
+</div>
+
+</div>
+<br>
+
+<div class="stats">
+
+<div class="card">
+<h2>+12%</h2>
+<p>Mango</p>
+</div>
+
+<div class="card">
+<h2>+8%</h2>
+<p>Banano</p>
+</div>
+
+<div class="card">
+<h2>-4%</h2>
+<p>Arroz</p>
+</div>
+
+<div class="card">
+<h2>-10%</h2>
+<p>Tomate</p>
+</div>
+
+</div>
+
+</main>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

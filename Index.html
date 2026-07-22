@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AgroLink Piura</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            🌱 <span>AgroLink</span>
+
+        </div>
+
+        <nav>
+
+            <a class="active">
+                <i class="fas fa-house"></i>
+                Inicio
+            </a>
+
+            <a href="productos.html">
+                <i class="fas fa-box"></i>
+                Productos
+            </a>
+
+            <a href="agricultores.html">
+                <i class="fas fa-users"></i>
+                Agricultores
+            </a>
+
+            <a href="mapa.html">
+                <i class="fas fa-map-location-dot"></i>
+                Mapa
+            </a>
+
+            <a href="pedidos.html">
+                <i class="fas fa-cart-shopping"></i>
+                Pedidos
+            </a>
+
+            <a href="precios.html">
+                <i class="fas fa-chart-line"></i>
+                Precios
+            </a>
+
+            <a href="mensajes.html">
+                <i class="fas fa-comments"></i>
+                Mensajes
+            </a>
+
+            <a href="perfil.html">
+                <i class="fas fa-user"></i>
+                Perfil
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <div class="search">
+
+                <i class="fas fa-search"></i>
+                 <input
+type="text"
+id="searchInicio"
+onkeyup="buscarInicio()"
+placeholder="Buscar productos, agricultores o precios...">
+            </div>
+
+            <div class="profile">
+
+                <div class="notification">
+
+                    <i class="fas fa-bell"></i>
+
+                </div>
+
+                <img src="img/agricultor.jpg">
+                 
+
+                <div>
+
+                    <strong>Juan Pérez</strong>
+
+                    <p>Agricultor</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div>
+
+                <span style="color:#86efac;font-weight:700;">
+                    🚀 Plataforma agrícola inteligente
+                </span>
+
+                <h1>
+
+                    Del campo a tu mesa,
+                    sin intermediarios
+
+                </h1>
+
+                <p>
+
+                    AgroLink conecta agricultores de Piura
+                    con compradores de manera directa,
+                    justa y transparente.
+
+                </p>
+
+                <button onclick="window.location.href='productos.html'">Explorar Mercado</button>
+
+            </div>
+
+            <img src="img/campo.jpg">
+
+        </section>
+
+        <!-- ESTADISTICAS -->
+
+        <section class="stats">
+
+            <div class="card">
+
+                <h2>350+</h2>
+
+                <p>Agricultores</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>120+</h2>
+
+                <p>Productos</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>560+</h2>
+
+                <p>Compradores</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>25%</h2>
+
+                <p>Más ingresos</p>
+
+            </div>
+
+        </section>
+
+        <!-- SEMAFORO Y MERCADO -->
+
+        <section class="dashboard-grid">
+
+            <div class="glass">
+
+                <h2>🚦 Semáforo de precios</h2>
+
+                <div class="price red">
+
+                    Limón Tahití
+
+                    <span>S/ 2.20</span>
+
+                </div>
+
+                <div class="price yellow">
+
+                    Mango Kent
+
+                    <span>S/ 2.00</span>
+
+                </div>
+
+                <div class="price green">
+
+                    Arroz Extra
+
+                    <span>S/ 1.40</span>
+
+                </div>
+
+            </div>
+
+            <div class="glass">
+
+                <h2>📈 Tendencias del mercado</h2>
+
+                <p>
+
+                    El precio del limón continúa aumentando.
+                    El mango mantiene estabilidad y el arroz
+                    presenta una ligera disminución.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTOS -->
+
+        <section class="products">
+
+            <h2>🌱 Productos destacados</h2>
+
+            <div class="product-card searchable">
+
+                <div class="product-card">
+
+                    <img src="img/limon.jpg">
+
+                    <h3>Limón Tahití</h3>
+
+                    <p>S/ 1.80 por kg</p>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="img/mango.jpg">
+
+                    <h3>Mango Kent</h3>
+
+                    <p>S/ 2.20 por kg</p>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="img/arroz.jpg">
+
+                    <h3>Arroz Extra</h3>
+
+                    <p>S/ 1.50 por kg</p>
+
+                </div>
+                <!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Productos - AgroLink</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🌱 <span>AgroLink</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                <i class="fas fa-house"></i>
+                Inicio
+            </a>
+
+            <a class="active">
+                <i class="fas fa-box"></i>
+                Productos
+            </a>
+
+            <a href="agricultores.html">
+                <i class="fas fa-users"></i>
+                Agricultores
+            </a>
+
+            <a href="mapa.html">
+                <i class="fas fa-map-location-dot"></i>
+                Mapa
+            </a>
+
+            <a href="pedidos.html">
+                <i class="fas fa-cart-shopping"></i>
+                Pedidos
+            </a>
+
+            <a href="precios.html">
+                <i class="fas fa-chart-line"></i>
+                Precios
+            </a>
+
+            <a href="mensajes.html">
+                <i class="fas fa-comments"></i>
+                Mensajes
+            </a>
+
+            <a href="perfil.html">
+                <i class="fas fa-user"></i>
+                Perfil
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <div class="search">
+
+                <i class="fas fa-search"></i>
+
+                <input
+                type="text"
+                id="searchInput"
+                onkeyup="buscarProductos()"
+                placeholder="Buscar productos...">
+            </div>
+
+        </div>
+
+        <div class="glass">
+
+            <h1>🌱 Catálogo de Productos</h1>
+
+            <br>
+
+            <p>
+                Encuentra productos agrícolas directamente
+                de productores de Piura.
+            </p>
+
+        </div>
+
+        <br>
+
+        <section class="product-grid">
+
+            <div class="product-card producto">
+
+                <img src="img/limon.jpg">
+
+                <h3>🍋 Limón Tahití</h3>
+
+                <p>S/ 1.80 por kg</p>
+
+            </div>
+
+            <div class="product-card producto">
+
+                <img src="img/mango.jpg">
+
+                <h3>🥭 Mango Kent</h3>
+
+                <p>S/ 2.20 por kg</p>
+
+            </div>
+
+            <div class="product-card producto">
+
+                <img src="img/arroz.jpg">
+
+                <h3>🌾 Arroz Extra</h3>
+
+                <p>S/ 1.50 por kg</p>
+
+            </div>
+            
+             
+
+        </section>
+
+    </main>
+
+</div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+            </div>
+
+        </section>
+
+        <!-- MAPA -->
+
+        <section class="products" style="margin-top:30px;">
+
+            <h2>🗺 Productores de Piura</h2>
+
+            <br>
+
+            <img
+              src="img/mapapiura.jpg"
+              style="
+              width:100%;
+              border-radius:25px;
+              max-height:500px;
+              object-fit:cover;">
+         <img src="img/mapa.jpg">
+
+        </section>
+        
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            AgroLink Piura © 2026
+            | Innovación para la agricultura
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+</body>
+</html>
